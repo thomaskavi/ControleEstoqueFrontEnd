@@ -34,7 +34,7 @@ const ListarFornecedores = () => {
       setFornecedores(fornecedores.map(f => (f.id === fornecedorEditado.id ? fornecedorEditado : f)));
       cancelarEdicao();
     } catch (error) {
-      console.error('Erro ao salvar fornecedor:', error);
+      alert('Erro ao salvar fornecedor. Verifique os campos em branco.', error);
     }
   };
 
@@ -48,7 +48,7 @@ const ListarFornecedores = () => {
       await axios.delete(`http://localhost:8080/api/fornecedores/${id}`);
       setFornecedores(fornecedores.filter(f => f.id !== id));
     } catch (error) {
-      console.error('Erro ao excluir fornecedor:', error);
+      console.error('Erro ao excluir fornecedor. Verifique os campos em branco.', error);
     }
   };
 
