@@ -1,6 +1,4 @@
-Claro! Aqui está a versão atualizada do README para o frontend, refletindo as melhorias:
-
----
+(LINK DO YOUTUBE NO FIM DO README)
 
 # Sistema de Controle de Estoque e Vendas - Frontend
 
