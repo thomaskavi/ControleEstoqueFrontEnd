@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../api'; // Certifique-se de que o caminho está correto
-import './CadastrarProduto.css'; // Importe o arquivo CSS
+import api from '../api';
 
 const CadastrarProduto = () => {
   const [produto, setProduto] = useState({
@@ -13,6 +12,7 @@ const CadastrarProduto = () => {
     precoParcelado: '',
     fornecedor: { id: '' }
   });
+
   const [fornecedores, setFornecedores] = useState([]);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const CadastrarProduto = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <h2>Cadastrar Produto</h2>
       <form onSubmit={handleSubmit}>
         <input

@@ -31,6 +31,7 @@ const EditarFornecedor = () => {
       navigate('/listar-fornecedores'); // Navega de volta para a lista após a atualização
     } catch (error) {
       console.error('Erro ao atualizar fornecedor:', error);
+      alert('Erro ao atualizar fornecedor.');
     }
   };
 

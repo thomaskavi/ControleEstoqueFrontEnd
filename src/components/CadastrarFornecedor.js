@@ -19,6 +19,13 @@ const CadastrarFornecedor = () => {
     try {
       await api.post('/fornecedores', fornecedor);
       alert('Fornecedor cadastrado com sucesso!');
+      setFornecedor({
+        nome: '',
+        contato: '',
+        email: '',
+        telefone: '',
+        localizacao: ''
+      }); // Limpa os campos do formulário após o cadastro
     } catch (error) {
       console.error('Erro ao cadastrar fornecedor:', error);
       alert('Erro ao cadastrar fornecedor.');
@@ -26,7 +33,7 @@ const CadastrarFornecedor = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <h2>Cadastrar Fornecedor</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -43,6 +50,7 @@ const CadastrarFornecedor = () => {
           value={fornecedor.contato}
           onChange={handleChange}
           placeholder="Contato"
+          required
         />
         <input
           type="email"
@@ -50,6 +58,7 @@ const CadastrarFornecedor = () => {
           value={fornecedor.email}
           onChange={handleChange}
           placeholder="Email"
+          required
         />
         <input
           type="text"

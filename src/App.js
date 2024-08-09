@@ -1,11 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home'; // Certifique-se de que o caminho está correto
+import Home from './components/Home';
 import CadastrarProduto from './components/CadastrarProduto';
 import ListarProdutos from './components/ListarProdutos';
 import CadastrarFornecedor from './components/CadastrarFornecedor';
 import ListarFornecedores from './components/ListarFornecedores';
-import './App.css'; // Importe o arquivo CSS
+import './styles/global.css'; // Importa estilos globais
+import './styles/layout.css'; // Importa estilos de layout
+import './styles/components/form.css'; // Importa estilos para formulários
+import './styles/components/button.css'; // Importa estilos para botões
+import './styles/components/logo.css'; // Importa estilos para logos
 
 function App() {
   return (

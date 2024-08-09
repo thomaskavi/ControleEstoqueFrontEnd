@@ -1,17 +1,23 @@
-.logoLelu {
-  width: 400px; /* Ajuste o tamanho conforme necessário */
-  height: 400px; /* Ajuste o tamanho conforme necessário */
-  border-radius: 50%; /* Torna a imagem redonda */
-  margin-right: 10px; /* Espaço entre a imagem e o texto */
+/* Home.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Ocupa a altura total da tela */
+  background-color: #f7d3dc; /* Cor de fundo clara */
+  text-align: center; /* Alinha o texto no centro */
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove preenchimento padrão */
 }
 
+.logoLelu {
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 20px; /* Espaço abaixo da logo */
+}
 
-
-.container {
-  display: flex; /* Alinha itens horizontalmente */
-  align-items: center; /* Alinha verticalmente ao centro */
-  justify-content: center;
-  background-color: #f7d3dc;
-  gap: 20px;
-  color: #81889B;
+h1 {
+  font-size: 25px; /* Tamanho do texto do título */
+  color: #333; /* Cor do texto */
+  margin: 30px; /* Remove margens padrão */
 }

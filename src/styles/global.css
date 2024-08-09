@@ -1,0 +1,79 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2bdca;
+  min-height: 50vh;
+  min-width: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #eea7b8;
+}
+
+/* Estilos gerais para tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead {
+  background-color: #eea7b8;
+  color: #fff;
+}
+
+/* Estilo para as células do cabeçalho */
+th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #f5a7b8;
+}
+
+/* Estilo para as células do corpo da tabela */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Estilo para linhas alternadas no corpo da tabela */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para linhas ao passar o mouse */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilo para botões dentro da tabela */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eea7b8;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #fbe9ed;
+  color: black;
+}
+
+.search-container{
+  
+}

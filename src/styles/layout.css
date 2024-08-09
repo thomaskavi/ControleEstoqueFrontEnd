@@ -1,0 +1,19 @@
+nav {
+  background-color: #fbe9ed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+main {
+  padding: 20px;
+}

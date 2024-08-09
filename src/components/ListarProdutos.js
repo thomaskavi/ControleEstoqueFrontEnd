@@ -5,11 +5,12 @@ const ListarProdutos = () => {
   const [produtos, setProdutos] = useState([]);
   const [editandoProdutoId, setEditandoProdutoId] = useState(null);
   const [produtoEditado, setProdutoEditado] = useState({});
+  const [busca, setBusca] = useState('');
 
   useEffect(() => {
     const fetchProdutos = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/produtos'); // URL completa
+        const response = await axios.get('http://localhost:8080/api/produtos');
         setProdutos(response.data);
       } catch (error) {
         console.error('Erro ao buscar produtos:', error);
@@ -52,9 +53,40 @@ const ListarProdutos = () => {
     }
   };
 
+  const handleBuscaChange = (e) => {
+    setBusca(e.target.value);
+  };
+
+  const produtosFiltrados = produtos.filter((produto) => {
+    const buscaLower = busca.toLowerCase();
+    const fornecedorNome = produto.fornecedor ? produto.fornecedor.nome.toLowerCase() : '';
+
+    return (
+      produto.referencia.toLowerCase().includes(buscaLower) ||
+      produto.descricao.toLowerCase().includes(buscaLower) ||
+      produto.tamanho.toLowerCase().includes(buscaLower) ||
+      produto.cor.toLowerCase().includes(buscaLower) ||
+      produto.precoAVista.toString().includes(buscaLower) ||
+      produto.precoParcelado.toString().includes(buscaLower) ||
+      fornecedorNome.includes(buscaLower)
+    );
+  });
+
+
   return (
-    <div>
-      <h1>Listar Produtos</h1>
+    <div className='main-container'>
+      <div className='head-container'>
+        <h1>Listar produtos:</h1>
+        <div className='search-container'>
+          <input
+            type='text'
+            name='Buscar'
+            value={busca}
+            onChange={handleBuscaChange}
+            placeholder='Digite para buscar...'
+          />
+        </div>
+      </div>
       <table>
         <thead>
           <tr>
@@ -70,7 +102,7 @@ const ListarProdutos = () => {
           </tr>
         </thead>
         <tbody>
-          {produtos.map(produto => (
+          {produtosFiltrados.map(produto => (
             <tr key={produto.id}>
               <td>
                 {editandoProdutoId === produto.id ? (
