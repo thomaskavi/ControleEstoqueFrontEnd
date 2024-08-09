@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Claro! Aqui está a versão atualizada do README para o frontend, refletindo as melhorias:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Sistema de Controle de Estoque e Vendas - Frontend
 
-In the project directory, you can run:
+Este repositório contém o frontend do sistema de controle de estoque e vendas para lojas de roupas, desenvolvido com React. O projeto está em desenvolvimento e atualmente permite a visualização, adição, edição e remoção de produtos e fornecedores.
 
-### `npm start`
+## Funcionalidades Atuais
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Visualizar Produtos:** Exibe uma lista dos produtos no estoque.
+- **Adicionar Produtos:** Interface para adicionar novos produtos ao estoque.
+- **Editar Produtos:** Atualize informações sobre produtos existentes.
+- **Remover Produtos:** Exclua produtos do estoque.
+- **Visualizar Fornecedores:** Exibe uma lista dos fornecedores cadastrados.
+- **Adicionar Fornecedores:** Interface para adicionar novos fornecedores.
+- **Editar Fornecedores:** Atualize informações sobre fornecedores existentes.
+- **Remover Fornecedores:** Exclua fornecedores cadastrados.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Funcionalidades Futuras
 
-### `npm test`
+- **Realizar Vendas:** Interface para registrar vendas e gerenciar transações.
+- **Atualizar Produtos e Fornecedores:** Melhorias na interface para editar e atualizar informações de produtos e fornecedores.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **Frontend:** React
+- **Backend:** Spring Boot
+- **Banco de Dados:** H2 Database (para desenvolvimento), MySQL (versão final)
+- **Ferramentas:** Git, GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/) (para desenvolvimento do frontend)
+- [Git](https://git-scm.com/)
 
-### `npm run eject`
+### Passos para Instalar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone o repositório:**
+   ```bash
+   git clone git@github.com:thomaskavi/LeluSystemFront.git
+   cd LeluSystemFront
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Execute o projeto:**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Acesse o sistema:**
+   - Acesse a aplicação através do [localhost](http://localhost:3000).
 
-## Learn More
+## Demonstração
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Assista ao vídeo mostrando o projeto funcionando: [Vídeo](https://youtu.be/zKvSOXkv5SE)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se precisar de mais alguma alteração ou tiver mais informações para adicionar, é só me avisar!
