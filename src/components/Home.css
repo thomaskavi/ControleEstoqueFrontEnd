@@ -1,0 +1,17 @@
+.logoLelu {
+  width: 400px; /* Ajuste o tamanho conforme necessário */
+  height: 400px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 50%; /* Torna a imagem redonda */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+
+.container {
+  display: flex; /* Alinha itens horizontalmente */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center;
+  background-color: #f7d3dc;
+  gap: 20px;
+  color: #81889B;
+}

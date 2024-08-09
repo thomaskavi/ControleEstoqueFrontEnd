@@ -1,38 +1,39 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif; /* Define a fonte para a aplicação */
+  background-color: #f2bdca; /* Cor de fundo rosa acinzentado */
+  min-height: 100vh; /* Garante que o fundo cubra a altura total da tela */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #fbe9ed; /* Cor de fundo para o menu de navegação */
+  padding: 20px; /* Espaçamento interno */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove preenchimento */
+  margin: 0; /* Remove margem */
+  display: flex; /* Alinha os itens em linha */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin-right: 15px; /* Espaçamento entre os links */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #81889B; /* Cor do texto dos links */
+  font-weight: bold; /* Torna o texto dos links em negrito */
+}
+
+a:hover {
+  color: #eea7b8; /* Cor ao passar o mouse */
+}
+
+main {
+  padding: 20px; /* Espaçamento interno principal */
 }

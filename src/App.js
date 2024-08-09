@@ -5,6 +5,7 @@ import CadastrarProduto from './components/CadastrarProduto';
 import ListarProdutos from './components/ListarProdutos';
 import CadastrarFornecedor from './components/CadastrarFornecedor';
 import ListarFornecedores from './components/ListarFornecedores';
+import './App.css'; // Importe o arquivo CSS
 
 function App() {
   return (

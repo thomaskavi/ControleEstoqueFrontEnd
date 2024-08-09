@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from '../api'; // Certifique-se de que o caminho está correto
+import './CadastrarProduto.css'; // Importe o arquivo CSS
 
 const CadastrarProduto = () => {
   const [produto, setProduto] = useState({
