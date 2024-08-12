@@ -1,4 +1,4 @@
-(LINK DO YOUTUBE NO FIM DO README)
+https://youtu.be/e1CgyZj4jQ0?si=9RzZOi6VVbNyxj_F
 
 # Sistema de Controle de Estoque e Vendas - Frontend
 
