@@ -17,7 +17,7 @@ const CadastrarFornecedor = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await api.post('/fornecedores', fornecedor);
+      await api.post('api/fornecedores', fornecedor);
       alert('Fornecedor cadastrado com sucesso!');
       setFornecedor({
         nome: '',

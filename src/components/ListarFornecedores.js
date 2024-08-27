@@ -1,5 +1,6 @@
+// ListarFornecedores.js
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api'; // Importa a instância do axios configurada
 
 const ListarFornecedores = () => {
   const [fornecedores, setFornecedores] = useState([]);
@@ -10,7 +11,7 @@ const ListarFornecedores = () => {
   useEffect(() => {
     const fetchFornecedores = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/fornecedores');
+        const response = await api.get('/api/fornecedores'); // Use a instância configurada do axios
         setFornecedores(response.data);
       } catch (error) {
         console.error('Erro ao buscar fornecedores:', error);
@@ -31,7 +32,7 @@ const ListarFornecedores = () => {
 
   const salvarEdicao = async () => {
     try {
-      await axios.put(`http://localhost:8080/api/fornecedores/${fornecedorEditado.id}`, fornecedorEditado);
+      await api.put(`/api/fornecedores/${fornecedorEditado.id}`, fornecedorEditado); // Use a instância configurada do axios
       setFornecedores(fornecedores.map(f => (f.id === fornecedorEditado.id ? fornecedorEditado : f)));
       cancelarEdicao();
     } catch (error) {
@@ -48,7 +49,7 @@ const ListarFornecedores = () => {
   const excluirFornecedor = async (id) => {
     if (window.confirm('Você tem certeza que deseja excluir este fornecedor?')) {
       try {
-        await axios.delete(`http://localhost:8080/api/fornecedores/${id}`);
+        await api.delete(`/api/fornecedores/${id}`); // Use a instância configurada do axios
         setFornecedores(fornecedores.filter(f => f.id !== id));
       } catch (error) {
         console.error('Erro ao excluir fornecedor:', error);

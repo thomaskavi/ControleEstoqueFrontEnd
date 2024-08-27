@@ -18,7 +18,7 @@ const CadastrarProduto = () => {
   useEffect(() => {
     const fetchFornecedores = async () => {
       try {
-        const response = await api.get('/fornecedores');
+        const response = await api.get('api/fornecedores');
         setFornecedores(response.data);
       } catch (error) {
         console.error('Erro ao buscar fornecedores:', error);
@@ -34,7 +34,7 @@ const CadastrarProduto = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await api.post('/produtos', produto);
+      await api.post('api/produtos', produto);
       alert('Produto cadastrado com sucesso!');
     } catch (error) {
       console.error('Erro ao cadastrar produto:', error);

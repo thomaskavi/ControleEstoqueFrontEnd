@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../api'; // Certifique-se de que o caminho está correto
+import api from '../api/api';
 
 function AtualizarProduto({ id }) {
   const [referencia, setReferencia] = useState('');

@@ -1,5 +1,6 @@
+// ListarProdutos.js
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api'; // Atualize o caminho se necessário
 
 const ListarProdutos = () => {
   const [produtos, setProdutos] = useState([]);
@@ -10,7 +11,7 @@ const ListarProdutos = () => {
   useEffect(() => {
     const fetchProdutos = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/produtos');
+        const response = await api.get('api/produtos');
         setProdutos(response.data);
       } catch (error) {
         console.error('Erro ao buscar produtos:', error);
@@ -31,7 +32,7 @@ const ListarProdutos = () => {
 
   const salvarEdicao = async () => {
     try {
-      await axios.put(`http://localhost:8080/api/produtos/${produtoEditado.id}`, produtoEditado);
+      await api.put(`api/produtos/${produtoEditado.id}`, produtoEditado);
       setProdutos(produtos.map(p => (p.id === produtoEditado.id ? produtoEditado : p)));
       cancelarEdicao();
     } catch (error) {
@@ -46,7 +47,7 @@ const ListarProdutos = () => {
 
   const excluirProduto = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/produtos/${id}`);
+      await api.delete(`api/produtos/${id}`);
       setProdutos(produtos.filter(p => p.id !== id));
     } catch (error) {
       console.error('Erro ao excluir produto:', error);
@@ -71,7 +72,6 @@ const ListarProdutos = () => {
       fornecedorNome.includes(buscaLower)
     );
   });
-
 
   return (
     <div className='main-container'>
